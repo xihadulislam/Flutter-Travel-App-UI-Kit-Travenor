@@ -12,71 +12,65 @@ class ColorConstant {
   static const Color kBlue = Color(0xFF6488E4);
   static const Color kLightGreen = Color(0xFFD9E6DC);
   static const Color kGreen = Color(0xFF309397);
-
   static const Color kDarkBlue = Color(0xFF0D253F);
 
-  static Color deepOrangeA200 = fromHex('#ff7029');
 
-  static Color whiteA7007e = fromHex('#7effffff');
 
-  static Color blueA400 = fromHex('#0d6efd');
+  static const Color deepOrangeA200 = Color(0xFFff7029);
 
-  static Color whiteA70090 = fromHex('#90ffffff');
+  static const Color whiteA7007e = Color(0x7effffff);
 
-  static Color gray60019 = fromHex('#197b7373');
+  static const Color blueA400 = Color(0xFF0d6efd);
 
-  static Color gray9006c = fromHex('#6c1b1e28');
+  static const Color whiteA70090 = Color(0x90ffffff);
 
-  static Color green800 = fromHex('#19b000');
+  static const Color gray60019 = Color(0x197b7373);
 
-  static Color yellow600 = fromHex('#ffd336');
+  static const Color gray9006c = Color(0x6c1b1e28);
 
-  static Color black900 = fromHex('#000000');
+  static const Color green800 = Color(0xFF19b000);
 
-  static Color redA400 = fromHex('#fe2352');
+  static const Color yellow600 = Color(0xFFffd336);
 
-  static Color bluegray2001e = fromHex('#1eb3bcc8');
+  static const Color black900 = Color(0xFF000000);
 
-  static Color bluegray4006c = fromHex('#6c7c838d');
+  static const Color redA400 = Color(0xFFfe2352);
 
-  static Color gray600 = fromHex('#707b81');
+  static const Color blueGray2001e = Color(0x1eb3bcc8);
 
-  static Color gray90068 = fromHex('#681b1e28');
+  static const Color blueGray4006c = Color(0x6c7c838d);
 
-  static Color whiteA7006c = fromHex('#6cffffff');
+  static const Color gray600 = Color(0xFF707b81);
 
-  static Color gray900 = fromHex('#1b1e28');
+  static const Color gray90068 = Color(0x681b1e28);
 
-  static Color bluegray100 = fromHex('#d0d9e6');
+  static const Color whiteA7006c = Color(0x6cffffff);
 
-  static Color bluegray20023 = fromHex('#23b3bcc8');
+  static const Color gray900 = Color(0xFF1b1e28);
 
-  static Color gray800Ab = fromHex('#ab3d3d3d');
+  static const Color blueGray100 = Color(0xFFd0d9e6);
 
-  static Color blue50 = fromHex('#e5f4ff');
+  static const Color blueGray20023 = Color(0x23b3bcc8);
 
-  static Color gray100 = fromHex('#f6f6f8');
+  static const Color gray800Ab = Color(0xab3d3d3d);
 
-  static Color bluegray20028 = fromHex('#28b3bcc8');
+  static const Color blue50 = Color(0xFFe5f4ff);
 
-  static Color bluegray900 = fromHex('#2d323d');
+  static const Color gray100 = Color(0xFFf6f6f8);
 
-  static Color bluegray401 = fromHex('#888888');
+  static const Color blueGray20028 = Color(0x28b3bcc8);
 
-  static Color bluegray400 = fromHex('#7c838d');
+  static const Color blueGray900 = Color(0xFF2d323d);
 
-  static Color blue100 = fromHex('#cae9ff');
+  static const Color blueGray401 = Color(0xFF888888);
 
-  static Color bluegray2001e1 = fromHex('#1ebdc5d3');
+  static const Color blueGray400 = Color(0xFF7c838d);
 
-  static Color whiteA700 = fromHex('#ffffff');
+  static const Color blue100 = Color(0xFFcae9ff);
 
-  static Color blueA4002b = fromHex('#2b0d6efd');
+  static const Color blueGray2001e1 = Color(0x1ebdc5d3);
 
-  static Color fromHex(String hexString) {
-    final buffer = StringBuffer();
-    if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
-    buffer.write(hexString.replaceFirst('#', ''));
-    return Color(int.parse(buffer.toString(), radix: 16));
-  }
+  static const Color whiteA700 = Color(0xFFffffff);
+
+  static const Color blueA4002b = Color(0x2b0d6efd);
 }

@@ -3,7 +3,6 @@ import 'package:travenor/core/style/ColorConstant.dart';
 import 'package:travenor/core/utils/size_utils.dart';
 
 class AppStyle {
-
   static TextStyle txtSFUIDisplayRegular14 = TextStyle(
     color: ColorConstant.gray600,
     fontSize: getFontSize(
@@ -23,7 +22,7 @@ class AppStyle {
   );
 
   static TextStyle txtSFUIDisplayRegular16 = TextStyle(
-    color: ColorConstant.bluegray400,
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       16,
     ),
@@ -50,7 +49,7 @@ class AppStyle {
   );
 
   static TextStyle txtSFUIDisplayRegular12 = TextStyle(
-    color: ColorConstant.bluegray400,
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       12,
     ),
@@ -59,7 +58,7 @@ class AppStyle {
   );
 
   static TextStyle txtSFUIDisplayRegular13 = TextStyle(
-    color: ColorConstant.bluegray400,
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       13,
     ),
@@ -67,8 +66,8 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtSFUIDisplayRegular14Bluegray400 = TextStyle(
-    color: ColorConstant.bluegray400,
+  static TextStyle txtSFUIDisplayRegular14blueGray400 = TextStyle(
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       14,
     ),
@@ -130,8 +129,8 @@ class AppStyle {
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle txtSFUIDisplayRegular11Bluegray400 = TextStyle(
-    color: ColorConstant.bluegray400,
+  static TextStyle txtSFUIDisplayRegular11blueGray400 = TextStyle(
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       11,
     ),
@@ -256,8 +255,8 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtSFUIDisplayRegular15Bluegray400 = TextStyle(
-    color: ColorConstant.bluegray400,
+  static TextStyle txtSFUIDisplayRegular15blueGray400 = TextStyle(
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       15,
     ),
@@ -283,8 +282,8 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtSFUIDisplayRegular15Bluegray100 = TextStyle(
-    color: ColorConstant.bluegray100,
+  static TextStyle txtSFUIDisplayRegular15blueGray100 = TextStyle(
+    color: ColorConstant.blueGray100,
     fontSize: getFontSize(
       15,
     ),
@@ -338,7 +337,7 @@ class AppStyle {
   );
 
   static TextStyle txtGillSansMT16 = TextStyle(
-    color: ColorConstant.bluegray400,
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       16,
     ),
@@ -362,7 +361,7 @@ class AppStyle {
     ),
     fontFamily: 'SF UI Display',
     fontWeight: FontWeight.w600,
-  );
+  ).copyWith(height: 1.00);
 
   static TextStyle txtSFUIDisplayMedium24 = TextStyle(
     color: ColorConstant.gray900,
@@ -373,8 +372,8 @@ class AppStyle {
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle txtSFUIDisplayMedium12Bluegray400 = TextStyle(
-    color: ColorConstant.bluegray400,
+  static TextStyle txtSFUIDisplayMedium12blueGray400 = TextStyle(
+    color: ColorConstant.blueGray400,
     fontSize: getFontSize(
       12,
     ),
@@ -383,7 +382,7 @@ class AppStyle {
   );
 
   static TextStyle txtRobotoRegular16 = TextStyle(
-    color: ColorConstant.bluegray401,
+    color: ColorConstant.blueGray401,
     fontSize: getFontSize(
       16,
     ),

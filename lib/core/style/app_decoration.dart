@@ -7,7 +7,7 @@ class AppDecoration {
         color: ColorConstant.whiteA700,
         boxShadow: [
           BoxShadow(
-            color: ColorConstant.bluegray2001e1,
+            color: ColorConstant.blueGray2001e1,
             spreadRadius: getHorizontalSize(
               2.00,
             ),
@@ -26,7 +26,7 @@ class AppDecoration {
         color: ColorConstant.whiteA700,
         boxShadow: [
           BoxShadow(
-            color: ColorConstant.bluegray2001e,
+            color: ColorConstant.blueGray2001e,
             spreadRadius: getHorizontalSize(
               2.00,
             ),
@@ -57,7 +57,7 @@ class AppDecoration {
         color: ColorConstant.whiteA700,
         boxShadow: [
           BoxShadow(
-            color: ColorConstant.bluegray20023,
+            color: ColorConstant.blueGray20023,
             spreadRadius: getHorizontalSize(
               2.00,
             ),
@@ -96,7 +96,7 @@ class AppDecoration {
         color: ColorConstant.whiteA700,
         boxShadow: [
           BoxShadow(
-            color: ColorConstant.bluegray20028,
+            color: ColorConstant.blueGray20028,
             spreadRadius: getHorizontalSize(
               2.00,
             ),

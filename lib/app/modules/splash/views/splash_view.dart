@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:travenor/app/routes/app_pages.dart';
 import 'package:travenor/core/style/ColorConstant.dart';
 import 'package:travenor/core/style/app_style.dart';
 
@@ -11,6 +12,10 @@ class SplashView extends GetView<SplashController> {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(seconds: 3), () {
+      Get.offAndToNamed(Routes.SIGN_IN);
+    });
+
     return Scaffold(
       backgroundColor: ColorConstant.blueA400,
       body: Center(
