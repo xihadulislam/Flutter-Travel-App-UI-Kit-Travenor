@@ -17,12 +17,12 @@ class SplashView extends GetView<SplashController> {
     });
 
     return Scaffold(
-      backgroundColor: ColorConstant.blueA400,
+      backgroundColor: ColorConstant.kPrimaryTextColor,
       body: Center(
         child: Text("Travenor",
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
-            style: AppStyle.txtGeometric415BTBlackA34.copyWith(height: 1.00)),
+            style: AppStyle.txtGeometric415BTWhiteA34.copyWith(height: 1.00)),
       ),
     );
   }

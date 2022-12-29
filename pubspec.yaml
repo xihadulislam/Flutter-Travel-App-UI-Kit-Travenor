@@ -56,7 +56,6 @@ flutter:
         - asset: assets/fonts/sf-ui-display-bold.otf
         - asset: assets/fonts/sf-ui-display-regular.otf
         - asset: assets/fonts/sf-ui-display-semibold.otf
-        - asset: assets/fonts/Geometr415-Lt-BT-Lite.ttf
 
     - family: Geometr415 Blk BT
       fonts:

@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Travenor',
       theme: ThemeData(
+        fontFamily: 'SF UI Display',
         primarySwatch: Colors.blue,
       ),
       initialRoute: AppPages.INITIAL,
