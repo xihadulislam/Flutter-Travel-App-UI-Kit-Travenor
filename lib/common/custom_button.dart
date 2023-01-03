@@ -4,7 +4,8 @@ import 'package:travenor/core/utils/size_utils.dart';
 
 class CustomButton extends StatelessWidget {
   CustomButton(
-      {this.shape,
+      {super.key,
+      this.shape,
       this.padding,
       this.variant,
       this.fontStyle,
@@ -128,7 +129,7 @@ class CustomButton extends StatelessWidget {
     switch (fontStyle) {
       case ButtonFontStyle.SFUIDisplaySemibold12:
         return TextStyle(
-          color: ColorConstant.whiteA700,
+          color: ColorConstant.kColorWhite,
           fontSize: getFontSize(
             12,
           ),
@@ -146,7 +147,7 @@ class CustomButton extends StatelessWidget {
         );
       default:
         return TextStyle(
-          color: ColorConstant.whiteA700,
+          color: ColorConstant.kColorWhite,
           fontSize: getFontSize(
             16,
           ),

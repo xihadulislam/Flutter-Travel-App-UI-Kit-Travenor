@@ -3,26 +3,6 @@ import 'package:travenor/core/style/ColorConstant.dart';
 import 'package:travenor/core/utils/size_utils.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  CustomTextFormField(
-      {this.shape,
-      this.padding,
-      this.variant,
-      this.fontStyle,
-      this.alignment,
-      this.width,
-      this.margin,
-      this.controller,
-      this.focusNode,
-      this.isObscureText = false,
-      this.textInputAction = TextInputAction.next,
-      this.maxLines,
-      this.hintText,
-      this.prefix,
-      this.prefixConstraints,
-      this.suffix,
-      this.suffixConstraints,
-      this.validator});
-
   TextFormFieldShape? shape;
 
   TextFormFieldPadding? padding;
@@ -58,6 +38,27 @@ class CustomTextFormField extends StatelessWidget {
   BoxConstraints? suffixConstraints;
 
   FormFieldValidator<String>? validator;
+
+  CustomTextFormField(
+      {super.key,
+      this.shape,
+      this.padding,
+      this.variant,
+      this.fontStyle,
+      this.alignment,
+      this.width,
+      this.margin,
+      this.controller,
+      this.focusNode,
+      this.isObscureText = false,
+      this.textInputAction = TextInputAction.next,
+      this.maxLines,
+      this.hintText,
+      this.prefix,
+      this.prefixConstraints,
+      this.suffix,
+      this.suffixConstraints,
+      this.validator});
 
   @override
   Widget build(BuildContext context) {
@@ -110,9 +111,7 @@ class CustomTextFormField extends StatelessWidget {
       default:
         return TextStyle(
           color: ColorConstant.gray900,
-          fontSize: getFontSize(
-            16,
-          ),
+          fontSize: getFontSize(16),
           fontFamily: 'SF UI Display',
           fontWeight: FontWeight.w400,
         );
@@ -123,9 +122,7 @@ class CustomTextFormField extends StatelessWidget {
     switch (shape) {
       default:
         return BorderRadius.circular(
-          getHorizontalSize(
-            14.00,
-          ),
+          getHorizontalSize(14.00),
         );
     }
   }
@@ -157,13 +154,9 @@ class CustomTextFormField extends StatelessWidget {
   _setPadding() {
     switch (padding) {
       case TextFormFieldPadding.PaddingAll14:
-        return getPadding(
-          all: 14,
-        );
+        return getPadding(all: 14);
       default:
-        return getPadding(
-          all: 18,
-        );
+        return getPadding(all: 18);
     }
   }
 }

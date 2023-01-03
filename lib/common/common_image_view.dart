@@ -21,6 +21,7 @@ class CommonImageView extends StatelessWidget {
   ///a [CommonNetworkImageView] it can be used for showing any network images
   /// it will shows the placeholder image if image is not found on network
   CommonImageView({
+    super.key,
     this.url,
     this.imagePath,
     this.svgPath,
@@ -39,7 +40,7 @@ class CommonImageView extends StatelessWidget {
 
   Widget _buildImageView() {
     if (svgPath != null && svgPath!.isNotEmpty) {
-      return Container(
+      return SizedBox(
         height: height,
         width: width,
         child: SvgPicture.asset(
@@ -64,7 +65,7 @@ class CommonImageView extends StatelessWidget {
         width: width,
         fit: fit,
         imageUrl: url!,
-        placeholder: (context, url) => Container(
+        placeholder: (context, url) => SizedBox(
           height: 30,
           width: 30,
           child: LinearProgressIndicator(
@@ -87,6 +88,6 @@ class CommonImageView extends StatelessWidget {
         fit: fit,
       );
     }
-    return SizedBox();
+    return const SizedBox();
   }
 }

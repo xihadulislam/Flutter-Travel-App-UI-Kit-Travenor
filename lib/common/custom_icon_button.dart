@@ -3,17 +3,6 @@ import 'package:travenor/core/style/ColorConstant.dart';
 import 'package:travenor/core/utils/size_utils.dart';
 
 class CustomIconButton extends StatelessWidget {
-  CustomIconButton(
-      {this.shape,
-      this.padding,
-      this.variant,
-      this.alignment,
-      this.margin,
-      this.height,
-      this.width,
-      this.child,
-      this.onTap});
-
   IconButtonShape? shape;
 
   IconButtonPadding? padding;
@@ -32,6 +21,18 @@ class CustomIconButton extends StatelessWidget {
 
   VoidCallback? onTap;
 
+  CustomIconButton(
+      {super.key,
+      this.shape,
+      this.padding,
+      this.variant,
+      this.alignment,
+      this.margin,
+      this.height,
+      this.width,
+      this.child,
+      this.onTap});
+
   @override
   Widget build(BuildContext context) {
     return alignment != null
@@ -46,21 +47,19 @@ class CustomIconButton extends StatelessWidget {
     return Padding(
       padding: margin ?? EdgeInsets.zero,
       child: IconButton(
-        constraints: BoxConstraints(
-          minHeight: getSize(height ?? 0),
-          minWidth: getSize(width ?? 0),
-        ),
-        padding: EdgeInsets.all(0),
-        icon: Container(
-          alignment: Alignment.center,
-          width: getSize(width ?? 0),
-          height: getSize(height ?? 0),
-          padding: _setPadding(),
-          decoration: _buildDecoration(),
-          child: child,
-        ),
-        onPressed: onTap,
-      ),
+          constraints: BoxConstraints(
+            minHeight: getSize(height ?? 0),
+            minWidth: getSize(width ?? 0),
+          ),
+          padding: const EdgeInsets.all(0),
+          icon: Container(
+              alignment: Alignment.center,
+              width: getSize(width ?? 0),
+              height: getSize(height ?? 0),
+              padding: _setPadding(),
+              decoration: _buildDecoration(),
+              child: child),
+          onPressed: onTap),
     );
   }
 
@@ -75,13 +74,9 @@ class CustomIconButton extends StatelessWidget {
   _setPadding() {
     switch (padding) {
       case IconButtonPadding.PaddingAll16:
-        return getPadding(
-          all: 16,
-        );
+        return getPadding(all: 16);
       default:
-        return getPadding(
-          all: 10,
-        );
+        return getPadding(all: 10);
     }
   }
 
@@ -102,15 +97,11 @@ class CustomIconButton extends StatelessWidget {
     switch (shape) {
       case IconButtonShape.CircleBorder25:
         return BorderRadius.circular(
-          getHorizontalSize(
-            25.00,
-          ),
+          getHorizontalSize(25.00),
         );
       default:
         return BorderRadius.circular(
-          getHorizontalSize(
-            22.00,
-          ),
+          getHorizontalSize(22.00),
         );
     }
   }
@@ -121,16 +112,9 @@ class CustomIconButton extends StatelessWidget {
         return [
           BoxShadow(
             color: ColorConstant.blueA4002b,
-            spreadRadius: getHorizontalSize(
-              2.00,
-            ),
-            blurRadius: getHorizontalSize(
-              2.00,
-            ),
-            offset: const Offset(
-              0,
-              8,
-            ),
+            spreadRadius: getHorizontalSize(2.00),
+            blurRadius: getHorizontalSize(2.00),
+            offset: const Offset(0, 8),
           )
         ];
       case IconButtonVariant.FillGray100:
