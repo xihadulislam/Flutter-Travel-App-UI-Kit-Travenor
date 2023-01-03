@@ -1,24 +1,44 @@
 import 'package:flutter/material.dart';
 
-class CustomWave extends CustomPainter {
+class CustomWave extends StatelessWidget {
+  const CustomWave({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CustomPaint(
+      painter: Moon(width: MediaQuery.of(context).size.width),
+      child: SizedBox(
+        width: MediaQuery.of(context).size.width,
+        height: 50,
+      ),
+    );
+  }
+}
+
+class Moon extends CustomPainter {
+  final double width;
+
+  Moon({required this.width});
+
   @override
   void paint(Canvas canvas, Size size) {
-    var path = Path();
-    var paint = Paint();
-
-    path.moveTo(0, size.height * 0.84);
-    path.quadraticBezierTo(size.width * 0.25, size.height * 0.77,
-        size.width * 0.52, size.height * 0.84);
-    // path.quadraticBezierTo(
-    //     size.width * 0.74, size.height * 0.92, size.width, size.height * 0.84);
-    path.lineTo(size.width, size.height);
-    path.lineTo(0, size.height);
-    path.close();
-    paint.color = Colors.red;
+    final paint = Paint()
+      ..color = Colors.orange
+      ..strokeWidth = 2
+      ..style = PaintingStyle.fill
+      ..strokeCap = StrokeCap.round;
+    Path path = Path();
+    path.arcToPoint(Offset(width, 0),
+        radius: Radius.circular(width + 200)); //change the radius as you like
+    path.arcToPoint(const Offset(0, 0),
+        radius: Radius.circular(width - 60),
+        clockwise: false); //change the radius as you like
     canvas.drawPath(path, paint);
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) => true;
-}
+  bool shouldRepaint(Moon oldDelegate) => false;
 
+  @override
+  bool shouldRebuildSemantics(Moon oldDelegate) => false;
+}

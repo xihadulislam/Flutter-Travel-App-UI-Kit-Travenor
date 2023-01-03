@@ -8,7 +8,7 @@ class ColorConstant {
   static const Color kColorWhite = Color(0xFFFFFFFF);
 
   static const Color kPrimaryTextColor = Color(0xFF1B1E28);
-  static const Color kSubTextColor = Color(0xFF7D848D);
+  static const Color kSecondaryTextColor = Color(0xFF7D848D);
   static const Color kBGColor = Color(0xFFFFFFFF);
   static const Color kFrameColor = Color(0xFFF8F9FA);
   static const Color kLineStoke = Color(0xFFF8F9FA);

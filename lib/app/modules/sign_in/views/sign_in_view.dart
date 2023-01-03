@@ -29,13 +29,13 @@ class SignInView extends GetView<SignInController> {
                 onTap: () {},
                 child:
                     CommonImageView(svgPath: 'assets/icons/img_arrowleft.svg')),
-            Spacer(),
-            Text("Sign in now", style: AppStyle.txtStyleSFUIDisplaySemiBold26),
+            const Spacer(),
+            Text("Sign in now", style: AppStyle.textStylePrimarySemiBold26),
             const SizedBox(
               height: 16,
             ),
             Text("Please sign in to continue our app",
-                style: AppStyle.txtStyleSFUIDisplayRegular16),
+                style: AppStyle.textStyleSecondaryMedium14),
             Form(
               autovalidateMode: AutovalidateMode.onUserInteraction,
               child: Column(
@@ -74,8 +74,7 @@ class SignInView extends GetView<SignInController> {
                             child: Text("Forget Password?",
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.left,
-                                style: AppStyle
-                                    .txtStyleSFUIDisplayColorPrimaryMedium14
+                                style: AppStyle.textStyleMainMedium14
                                     .copyWith(height: 1.00))),
                       )),
                   CustomButton(
@@ -86,9 +85,7 @@ class SignInView extends GetView<SignInController> {
                       text: "Sign in",
                       margin: getMargin(left: 20, top: 40, right: 20),
                       alignment: Alignment.center),
-                  const SizedBox(
-                    height: 40,
-                  ),
+                  const SizedBox(height: 40),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,7 +94,7 @@ class SignInView extends GetView<SignInController> {
                         Text("Don't have an account?",
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
-                            style: AppStyle.txtStyleSFUIDisplayRegular14
+                            style: AppStyle.textStyleSecondaryRegular14
                                 .copyWith(height: 1.00)),
                         InkWell(
                           onTap: () {
@@ -108,18 +105,15 @@ class SignInView extends GetView<SignInController> {
                               child: Text("Sign up",
                                   overflow: TextOverflow.ellipsis,
                                   textAlign: TextAlign.left,
-                                  style: AppStyle
-                                      .txtStyleSFUIDisplayColorPrimaryMedium14
+                                  style: AppStyle.textStyleMainMedium16
                                       .copyWith(height: 1.00))),
                         )
                       ]),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  const SizedBox(height: 20),
                   Text("Or connect",
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.left,
-                      style: AppStyle.txtStyleSFUIDisplayRegular14
+                      style: AppStyle.textStylePrimaryRegular14
                           .copyWith(height: 1.00)),
                 ],
               ),
