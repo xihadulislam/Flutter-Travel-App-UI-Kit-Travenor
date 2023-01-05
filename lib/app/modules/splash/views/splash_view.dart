@@ -13,11 +13,11 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 3), () {
-      Get.offAndToNamed(Routes.SIGN_IN);
+      Get.offAndToNamed(Routes.ONBOARD_SCREEN);
     });
 
     return Scaffold(
-      backgroundColor: ColorConstant.kPrimaryTextColor,
+      backgroundColor: ColorConstant.kColorPrimary,
       body: Center(
         child: Text("Travenor",
             overflow: TextOverflow.ellipsis,
